@@ -4,11 +4,13 @@ const recruiterController = require("../controllers/recruiterController");
 
 const router = express.Router();
 
+router.route("/").get(recruiterController.getAllRecruiter);
+router.route("/:id").get(recruiterController.getRecruiter);
+
 router.post("/signup", authController.signupRecruiter);
 router.post("/login", authController.loginRecruiter);
 
-// Admin Routes
-router.route("/").get(recruiterController.getAllRecruiter);
-router.route("/:id").get(recruiterController.getRecruiter);
+router.post("/forgotPassword", authController.forgotPasswordRecruiter);
+router.patch("/resetPassword/:token", authController.resetPasswordRecruiter);
 
 module.exports = router;

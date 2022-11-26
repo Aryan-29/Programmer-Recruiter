@@ -1,6 +1,8 @@
+const crypto = require("crypto");
 const catchAsync = require("../utils/catchAsync");
 const createSendToken = require("../utils/createSendToken");
 const AppError = require("../utils/appError");
+const Email = require("../utils/email");
 
 exports.signup = (Model) =>
   catchAsync(async (req, res, next) => {
@@ -38,6 +40,84 @@ exports.login = (Model) =>
 
     //3) if everything ok, send the token to client
     createSendToken(user, 200, req, res);
+  });
+
+exports.forgotPassword = (Model) =>
+  catchAsync(async (req, res, next) => {
+    //Get the posted email
+    if (!req.body.email) {
+      return next(new AppError("Please provide your email", 400));
+    }
+
+    const user = await Model.findOne({ email: req.body.email });
+
+    if (!user) {
+      return next(new AppError("The user with the email does not exist", 404));
+    }
+
+    //Generate the random reset token
+    const resetToken = user.createPasswordResetToken();
+
+    //Save the passwordTokens fields in the database
+    await user.save({ validateBeforeSave: false });
+
+    // Send it to the user's email
+    try {
+      const resetURL = `${req.protocol}://${req.get(
+        "host"
+      )}/api/v1/users/resetPassword/${resetToken}`;
+
+      await new Email(user, resetURL).sendResetPassword();
+
+      res.status(200).json({
+        satus: "success",
+        message: "Token sent to email!",
+      });
+    } catch (err) {
+      user.passwordResetToken = undefined;
+      user.passwordResetExpires = undefined;
+      await user.save({ validateBeforeSave: false });
+
+      console.log(err);
+      return next(
+        new AppError(
+          "There was an error sending the email. Try again later",
+          500
+        )
+      );
+    }
+  });
+
+exports.resetPassword = (Model) =>
+  catchAsync(async (req, res, next) => {
+    //1)Get the user from the token passed
+    const hashedToken = crypto
+      .createHash("sha256")
+      .update(req.params.token)
+      .digest("hex");
+
+    const user = await Model.findOne({
+      passwordResetToken: hashedToken,
+      passwordResetExpires: { $gt: Date.now() },
+    });
+
+    //2)If the token not is not expired and there is a user, set the new password
+    if (!user) {
+      next(new AppError("Token is invalid or expired"));
+    }
+
+    if (!req.body.password) {
+      return next(new AppError("Please provide password"));
+    }
+
+    user.password = req.body.password;
+    user.passwordResetToken = undefined;
+    user.passwordResetExpires = undefined;
+    await user.save();
+
+    res.status(200).json({
+      status: "success",
+    });
   });
 
 exports.getAll = (Model) =>
