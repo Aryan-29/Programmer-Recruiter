@@ -2,9 +2,6 @@
   {
     "name": "Krish Panchal",
     "email": "krishpanchal582@gmail.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "Full Stack Developer",
     "bio": "A Full Stack Developer with 2years of experience",
     "city": "Mumbai",
@@ -28,14 +25,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Yash Kulkarni",
     "email": "yash@gmail.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "Java Developer",
     "bio": "Hello everyone I am a java full stack developer I have knowledge of react js , angular and java script etc",
     "city": "Shimla",
@@ -59,14 +53,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Lourdes Browning",
     "email": "loulou@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "CSS Developer",
     "bio": "Best csss developer ever",
     "city": "Banglore",
@@ -90,14 +81,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Jennifer Hardy",
     "email": "jennifer@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "Springboot Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -121,14 +109,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Kate Morrison",
     "email": "kate@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "MERN Stack Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -152,14 +137,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Eliana Stout",
     "email": "eliana@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "MERN Stack Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -183,14 +165,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Cristian Vega",
     "email": "chris@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "MERN Stack Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -214,14 +193,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "Lisa Brown",
     "email": "lisa@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "MERN Stack Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -245,14 +221,11 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   },
   {
     "name": "John Riley",
     "email": "john@example.com",
-    "photo": {
-      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
-    },
     "title": "MERN Stack Developer",
     "bio": "Putting together bits and pieces of code.",
     "city": "Banglore",
@@ -276,6 +249,6 @@
     ],
     "protfolioLink": "https://www.garyvaynerchuk.com/",
     "linkedIn": "https://www.linkedin.com/home",
-    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+    "password": "test1234"
   }
 ]

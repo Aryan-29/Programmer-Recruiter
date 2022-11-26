@@ -19,16 +19,31 @@ module.exports = (user, statusCode, req, res) => {
   //This might not run
   if (process.env.NODE_ENV === "production") cookieOption.secure = true;
 
-  res.cookie("jwt", token, cookieOption);
+  res.cookie("token", token, cookieOption);
 
   //Remove password from output
   user.password = undefined;
 
-  res.status(statusCode).json({
-    status: "success",
-    token,
-    data: {
-      user,
-    },
-  });
+  if (user.role === "job hunter") {
+    res.status(statusCode).json({
+      status: "success",
+      token,
+      data: {
+        user: {
+          name: user.name,
+          email: user.email,
+          photo: user.photo.url ? user.photo : null,
+          role: user.role,
+        },
+      },
+    });
+  } else {
+    res.status(statusCode).json({
+      status: "success",
+      token,
+      data: {
+        user,
+      },
+    });
+  }
 };

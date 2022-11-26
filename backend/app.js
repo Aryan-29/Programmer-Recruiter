@@ -1,18 +1,29 @@
 const express = require("express");
+const cookieParser = require("cookie-parser");
+const fileUpload = require("express-fileupload");
+
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const userRoutes = require("./routes/userRoutes");
 const recruiterRoutes = require("./routes/recruiterRoutes");
+const projectRoutes = require("./routes/projectRoutes");
 
 const app = express();
 
 //express.json is used for reading data from the body into req.body
 app.use(express.json());
+app.use(cookieParser());
+
+app.use(
+  fileUpload({
+    useTempFiles: true,
+  })
+);
 
 // All routes
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/recruiters", recruiterRoutes);
-// app.use("/api/v1/projects", projectRoutes);
+app.use("/api/v1/projects", projectRoutes);
 
 //Handling undefined routes
 app.all("*", (req, res, next) => {

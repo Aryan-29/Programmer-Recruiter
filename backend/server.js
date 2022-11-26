@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cloudinary = require("cloudinary");
 
 process.on("uncaughtException", (err) => {
   console.log("Unhandled Exception 💥 Shutting Down");
@@ -21,6 +22,12 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("Database connection successful!"));
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 console.log(process.env.NODE_ENV);
 

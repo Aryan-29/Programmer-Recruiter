@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 
 const recruiterSchema = mongoose.Schema({
-  companyName: {
+  name: {
     type: "String",
     required: [true, "A recruiter must have a company name"],
   },
@@ -13,26 +13,30 @@ const recruiterSchema = mongoose.Schema({
     type: "String",
     required: [true, "A recruiter must have a company email"],
   },
-  companyLogo: {
+  photo: {
     public_id: {
       type: String,
     },
     url: {
       type: String,
-      default:
-        "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg",
     },
   },
   website: {
     type: "String",
   },
-  companyDescription: {
+  description: {
     type: String,
   },
   role: {
     type: String,
     default: "recruiter",
   },
+  collections: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: "Project",
+    },
+  ],
   password: {
     type: String,
     required: [true, "A recruiter must have a password"],

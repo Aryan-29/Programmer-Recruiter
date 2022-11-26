@@ -28,8 +28,6 @@ const userSchema = mongoose.Schema(
       },
       url: {
         type: String,
-        default:
-          "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg",
       },
     },
 

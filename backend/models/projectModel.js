@@ -8,6 +8,7 @@ const projectSchema = mongoose.Schema({
 
   description: {
     type: "String",
+    required: [true, "A Project must have a description"],
   },
 
   projectLink: {
@@ -26,14 +27,12 @@ const projectSchema = mongoose.Schema({
     },
   ],
 
-  image: {
+  photo: {
     public_id: {
       type: String,
-      required: [true, ""],
     },
     url: {
       type: String,
-      required: [true, "Project Image is required"],
     },
   },
 

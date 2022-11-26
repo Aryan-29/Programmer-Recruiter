@@ -1,3 +1,42 @@
+********Done Till now********
+
+  Job Hunter Side
+    Signup,Login Job Hunter
+    Forget/Reset Password
+    Update Me
+    Get all
+    Get Me
+    Get A
+
+  Recruiter Side
+    Signup,Login Recruiter
+    Forget/Reset Password
+    Update Me
+    Get all
+    Get Me
+    Get A
+
+  Collections
+    Both Recruiter and Job Hunter Side
+      Add
+      Get My
+      Remove
+
+********Things remaining********
+
+  Job Hunter Side
+    Update user certifications
+    Filteration and pagination left
+
+  Recruiter Hunter Side
+    Nothing left 
+
+  Projects Side
+    Filteration and pagination Left
+
+
+
+
 Frontend part
 When user goes to see profile, and when user updates someth part we dont wanna reload and fetch data again.
 So what we can do is, we directly update the redux state for the user based on if the request is success. If not success do not do

@@ -26,3 +26,8 @@ yarn-error.log*
 
 # ENV files
 backend/config.env
+
+# Temp Files
+backend/tmp
+
+
