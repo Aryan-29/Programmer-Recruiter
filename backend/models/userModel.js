@@ -58,13 +58,15 @@ const userSchema = mongoose.Schema(
       },
     },
 
-    availability: {
-      type: String,
-      enum: {
-        values: ["Full Time", "Part Time", "Internship"],
-        message: "Availability is either: Full Time, Part Time, Internship",
+    availability: [
+      {
+        type: String,
+        enum: {
+          values: ["Full Time", "Part Time", "Internship"],
+          message: "Availability is either: Full Time, Part Time, Internship",
+        },
       },
-    },
+    ],
 
     preferredLocations: [
       {
@@ -131,17 +133,6 @@ const userSchema = mongoose.Schema(
       minlength: [8, "A password must have atleast 8 character"],
       select: false,
     },
-    passwordConfirm: {
-      type: String,
-      required: [true, "Please confirm your password"],
-      validate: {
-        //Only works on CREATE & SAVE!!
-        validator: function (el) {
-          return el === this.password; //if equal returns true(no error)  & if no equal returns false (error)
-        },
-        message: "Password and Confirm password don't match",
-      },
-    },
     passwordResetToken: String,
     passwordResetExpires: Date,
   },
@@ -168,12 +159,6 @@ userSchema.pre("save", async function (next) {
 
   next();
 });
-
-userSchema.methods.getJwtToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES,
-  });
-};
 
 userSchema.methods.correctPassword = function (
   candidatePassword,

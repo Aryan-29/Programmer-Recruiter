@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Krish Panchal",
+    "email": "krishpanchal582@gmail.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "Full Stack Developer",
+    "bio": "A Full Stack Developer with 2years of experience",
+    "city": "Mumbai",
+    "type": "Fresher",
+    "availability": ["Internship", "Part Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Yash Kulkarni",
+    "email": "yash@gmail.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "Java Developer",
+    "bio": "Hello everyone I am a java full stack developer I have knowledge of react js , angular and java script etc",
+    "city": "Shimla",
+    "type": "Intermediate",
+    "availability": ["Internship"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Lourdes Browning",
+    "email": "loulou@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "CSS Developer",
+    "bio": "Best csss developer ever",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Jennifer Hardy",
+    "email": "jennifer@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "Springboot Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Kate Morrison",
+    "email": "kate@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "MERN Stack Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Eliana Stout",
+    "email": "eliana@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "MERN Stack Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Cristian Vega",
+    "email": "chris@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "MERN Stack Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "Lisa Brown",
+    "email": "lisa@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "MERN Stack Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  },
+  {
+    "name": "John Riley",
+    "email": "john@example.com",
+    "photo": {
+      "url": "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg"
+    },
+    "title": "MERN Stack Developer",
+    "bio": "Putting together bits and pieces of code.",
+    "city": "Banglore",
+    "type": "Professional",
+    "availability": ["Internship", "Full Time"],
+    "preferredLocations": ["Banglore", "Hyderabad", "Mumbai"],
+    "skills": ["HTML", "CSS", "Javascript", "Java"],
+    "experience": [
+      {
+        "companyName": "Google",
+        "jobRole": "Frontend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different frontend modules."
+      },
+      {
+        "companyName": "Amazon",
+        "jobRole": "Backend Developer",
+        "employmentType": "Internship",
+        "description": "Had worked on alots of different backend modules."
+      }
+    ],
+    "protfolioLink": "https://www.garyvaynerchuk.com/",
+    "linkedIn": "https://www.linkedin.com/home",
+    "password": "$2a$10$/PfoxxDDL5QQa08tAu9HVuzHWS0g01ckfyQmrviPWi72V61NuvBEK"
+  }
+]

@@ -9,7 +9,7 @@ const recruiterSchema = mongoose.Schema({
     type: "String",
     required: [true, "A recruiter must have a company name"],
   },
-  companyEmail: {
+  email: {
     type: "String",
     required: [true, "A recruiter must have a company email"],
   },
@@ -23,6 +23,9 @@ const recruiterSchema = mongoose.Schema({
         "https://res.cloudinary.com/dhyyf1dnu/image/upload/v1643810957/Job%20Hunter%20Photos/default_oxo7cf.jpg",
     },
   },
+  website: {
+    type: "String",
+  },
   companyDescription: {
     type: String,
   },
@@ -35,17 +38,6 @@ const recruiterSchema = mongoose.Schema({
     required: [true, "A recruiter must have a password"],
     minlength: [8, "A password must have atleast 8 character"],
     select: false,
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, "Please confirm your password"],
-    validate: {
-      //Only works on CREATE & SAVE!!
-      validator: function (el) {
-        return el === this.password; //if equal returns true(no error)  & if no equal returns false (error)
-      },
-      message: "Password and Confirm password don't match",
-    },
   },
   passwordResetToken: String,
   passwordResetExpires: Date,
@@ -61,12 +53,6 @@ recruiterSchema.pre("save", async function (next) {
 
   next();
 });
-
-recruiterSchema.methods.getJwtToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES,
-  });
-};
 
 recruiterSchema.methods.correctPassword = function (
   candidatePassword,

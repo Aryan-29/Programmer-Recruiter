@@ -1,6 +1,8 @@
 const express = require("express");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
+const userRoutes = require("./routes/userRoutes");
+const recruiterRoutes = require("./routes/recruiterRoutes");
 
 const app = express();
 
@@ -8,6 +10,9 @@ const app = express();
 app.use(express.json());
 
 // All routes
+app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/recruiters", recruiterRoutes);
+// app.use("/api/v1/projects", projectRoutes);
 
 //Handling undefined routes
 app.all("*", (req, res, next) => {
